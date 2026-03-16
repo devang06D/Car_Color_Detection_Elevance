@@ -79,7 +79,7 @@ carColor/
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/yourusername/car-colour-detection.git
+git clone https://github.com/devang06D/Car_Color_Detection_Elevance.git
 cd car-colour-detection
 ```
 
