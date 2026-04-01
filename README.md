@@ -35,14 +35,12 @@ This project demonstrates the application of deep learning concepts learned duri
 ## Project Structure
 ```plaintext
 Car_Color_Detection/
-├── src/
-│   ├── main.py         # Main script to run the program
-│   ├── detector.py     # Contains color detection algorithms
-│   ├── preprocess.py    # Functions for image pre-processing
-├── data/
-│   ├── images/         # Contains example images
-│   ├── logs/           # Contains generated log files
-├── README.md            # Project documentation
+   |
+   ├── car-color-detection.ipynb         # CNN Model Training Notebook
+   ├── car_color_gui.py                  # Main GUI
+   ├── car_color_cnn.h5                  # Pre-Trained moel
+   ├── requirements.txt
+
 ```
 ## Installation
 1. Clone the Repository
@@ -53,8 +51,8 @@ Car_Color_Detection/
  
  2. Create virtual environment
  ``` bash
-   pip install -r requirements.txt
-```
+   python -m venv car_env
+ ```
 
 3. Activate virtual environment (Windows)
    ``` bash
