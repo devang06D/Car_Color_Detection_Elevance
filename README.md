@@ -1,7 +1,7 @@
 # Car Colour Detection and Traffic Monitoring System
 
-**Internship Extension Project**  
-*Built upon Facial Emotion Detection CNN Training Project*
+** PreTrianed Model **
+https://drive.google.com/drive/folders/1ruDyD6ghfpzDhpy0S86VI2qRVhKlI68y?usp=sharing
 
 ## Project Overview
 
