@@ -1,15 +1,38 @@
-# Car Color Detection
+# Car Colour Detection and Traffic Monitoring System
 
-### Project Information
-This project aims to build a system that detects the color of cars using various computer vision techniques. It is especially useful for automotive companies and traffic management systems in analyzing color distribution in vehicles.
+**Internship Extension Project**  
+*Built upon Facial Emotion Detection CNN Training Project*
 
-### System Workflow
-1. **Image Acquisition**: The system captures images of the vehicles from a camera feed.
-2. **Pre-processing**: Images are pre-processed to enhance color detection. This includes resizing, filtering, and normalization.
-3. **Color Detection**: The system utilizes algorithms to detect car colors from the processed images based on specified color ranges.
-4. **Output Generation**: Detected colors are outputted in a user-friendly format, which can be logged or displayed in a dashboard.
+## Project Overview
 
-### Project Structure
+This project develops a practical computer vision system capable of analyzing traffic scenes. It automatically detects cars, identifies their colours using a custom-trained Convolutional Neural Network (CNN), and visualizes the results with colour-coded bounding boxes. 
+
+As per the internship requirement:
+- **Blue cars** are highlighted with **Red bounding boxes**
+- **All other cars** are highlighted with **Blue bounding boxes**
+
+The system also counts the total number of cars and people in the scene. A user-friendly desktop GUI built with Tkinter enables easy image upload and result visualization.
+
+This project demonstrates the application of deep learning concepts learned during the Emotion Detection training into a real-world use case.
+
+## Features
+
+- Custom CNN-based Car Colour Classification (11 classes)
+- Dynamic bounding box coloring based on car colour
+- Car and People counting in traffic scenes
+- Clean and interactive Tkinter GUI with input/output preview
+- Consistent model architecture and training pipeline with Emotion Detection project
+- Easy-to-use interface suitable for demonstration
+
+## Technologies Used
+
+- **Python**
+- **TensorFlow / Keras** (Custom CNN Model)
+- **OpenCV** (Image processing and visualization)
+- **NumPy**
+- **Tkinter** (Graphical User Interface)
+
+## Project Structure
 ```plaintext
 Car_Color_Detection/
 ├── src/
@@ -20,7 +43,32 @@ Car_Color_Detection/
 │   ├── images/         # Contains example images
 │   ├── logs/           # Contains generated log files
 ├── README.md            # Project documentation
-``` 
+```
+## Installation
+1. Clone the Repository
+   ``` bash
+   git clone https://github.com/devang06D/Car_Color_Detection_Elevance.git
+   cd Car_Color_Detection_Elevance
+   
+ 
+ 2. Create virtual environment
+ ``` bash
+   pip install -r requirements.txt
+```
 
-### Internship Context
-This project was developed during an internship at [Internship Company's Name], where I worked on enhancing automated systems for vehicle analysis. The experience provided hands-on exposure to machine learning and image processing applications. The goal was to create a robust solution that could be integrated into existing traffic monitoring systems.
+3. Activate virtual environment (Windows)
+   ``` bash
+   car_env\Scripts\activate
+   ```
+4. Install dependencies
+``` bash
+    pip install -r requirements.txt
+```
+
+## How to Run
+1. Ensure car_color_cnn.h5 is in the project root folder.
+2. Launch the application:
+  ``` bash
+    python car_color_gui.py
+ ```
+3. Click "Select Traffic Image", choose an image, and observe the results.
